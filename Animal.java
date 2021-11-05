@@ -24,6 +24,24 @@ public class Animal {
         }
     }
 
+    void feed() {
+        this.weight += 1;
+        System.out.println("Pet is gaining weight");
+        System.out.println("Weight of pet " + this.weight);
+
+    }
+
+    Double takeForAWalk() {
+        this.weight -= 1;
+        System.out.println("Pet is loosing fat");
+        System.out.println("Weight after walk: " + this.weight);
+        if (this.weight < 1) {
+            System.out.println("Pet is dead :(");
+        }
+        return this.weight;
+
+
+
     void introduceYourself() {
         System.out.println("I'm " + this.name);
     }
